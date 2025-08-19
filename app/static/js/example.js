@@ -1,0 +1,3 @@
+function cheek(){
+    alert("hello");
+}
