@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register Page</h1><br>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        
+        <div>
+            <label for="usename">Username</label>
+            {{ form.usename() }}  <!-- Render the input field here -->
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            {{ form.password() }}  <!-- Render the input field here -->
+        </div>
+        
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+    
+    <a href="{{ url_for('login') }}">Already have an account? Login</a><br>
+</body>
+</html>
